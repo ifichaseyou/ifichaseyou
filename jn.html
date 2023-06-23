@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0099)file:///C:/Users/ifich/Desktop/%E9%83%AD%E6%88%90%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99.html -->
+
 <html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,14 @@
         body{
         
             margin:0;
+
             height: 100vh;
+
             background-color:#eee;
 
 
         }
+		<!--设置网页身体标签--><!--设置边距为0--><!--设置视图高度，百分百--><!--设置颜色灰色-->
         @media(max-width:600px) {
             .ceBian{
                   display: none;
@@ -36,32 +39,51 @@
         }
 /**{
     border:1px solid black;
+	<!--设置透明元素可视化-->
 }*/
+
+
+
 .yinying{
     box-shadow: rgb(0 0 0 / 20%)0px 2px 1px -1px,
     rgb(0 0 0 / 14%) 0px 1px 1px 0px ,rgb(0 0 0 / 12%) 0px 1px
+	<!--设置阴影-->
 }
 .flex{
     display: flex;
+	<!--设置flex加载-->
 }
 .baise{
     background-color: white;
+	<!--设置白色背景-->
+}
+.huise{
+    background-color:#e9faff;
+}
+.hse{
+    background-color:#0066ff;
 }
 
 .flex1{
     flex:1;
+	<!--设置占据所有区域-->
 }
+
 .column{
     flex-direction: column;
+	<!--设置竖方向-->
 }
 .mg8{
     margin: 8px;
+	<!--设置上下左右边距都是8像素-->
 }
 .mgr8{
     margin-right:8px ;
+	<!--设置右边距是8像素-->
 }
 .mgt8{
     margin-top: 8px;
+	<!--设置上边距是8像素-->
 }
 .daohang{
     padding: 10px 20px;
@@ -71,6 +93,14 @@
 }
 .fanSon{
     font-family:仿宋; 
+	<!--设置字体仿宋-->
+}
+.footer{
+
+position: fixed;
+
+bottom: 0;
+<!--设置漂浮靠下-->
 }
 
 .font-center{ text-align:center}
@@ -88,7 +118,7 @@
 	
 	font-family: 仿宋;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: #CCCCCC;
 	color: #255e95;
 	background: url(../images/ico3.gif) no-repeat 15px center;
 	background-color:#e9faff;
@@ -99,6 +129,7 @@
 
 <body class="flex">
     <!--侧边栏-->
+	<!--width: 120px宽度-->
 <div style="width: 120px;z-index: 2;" class="ceBian baise yinying">
      <!--头像栏-->
      <div style="
@@ -112,15 +143,15 @@
     </div>
 
                <!--导航栏-->
-     <a href="https://ifichaseyou.github.io/ifichaseyou/jn.html"><div class="daohang fanSon" style="text-align: center; font-size; 50px; padding: 10px; "><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt="">  <div>我的技能</div> </div></a>
+     <a href="https://ifichaseyou.github.io/ifichaseyou/game.html"><div class="daohang fanSon" style="text-align: center; font-size; 50px; padding: 10px; "><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt="">  <div>我的技能</div> </div></a>
 	 <a href="https://ifichaseyou.github.io/ifichaseyou/game.html"><div class="daohang fanSon" style="text-align: center; font-size; 50px; padding: 10px; "><img src="./if-files/jihuanyouxitubiao.png" width="80px" height="80px" alt="">  <div>我的游戏</div> </div></a>
 	 <div class="daohang fanSon" style="text-align: center; font-size; 50px; padding: 10px; "><img src="./if-files/jihuanyouxitubiao.png" width="80px" height="80px" alt="">  <div>空白模板</div>  </div>
 	 <div class="daohang fanSon" style="text-align: center; font-size; 50px; padding: 10px; "><img src="./if-files/jihuanyouxitubiao.png" width="80px" height="80px" alt="">  <div>空白模板</div>  </div>
 	 </div>
 
-   <!--主区域-->
+   <!--主区域--><!--flex1占据侧边栏以外的所有区域-->
 <div class="flex1 flex column">
-    <!--头部栏-->
+    <!--头部栏--> <!--height: 120px设置高度120像素--> 
     <div style="height: 120px;z-index: 1;" class="baise yinying">
     <div style="
      justify-content: center;
@@ -134,14 +165,14 @@
 
 	</div>   
 
-    <!--内容栏-->
+    <!--内容栏--><!--flex1占据头部区以外的所有区域--><!--flex默认属性加载-->
     <div style="overflow: auto;" class="neiRong flex1 flex">
-        <!--左区-->
+        <!--左区--><!--flex:3左区占据内容区的3/4--><!--flex column设置竖向-->
         <div style="flex:3" class="flex column mg8">
              <!--数据区-->
              <div class="flex shujuQu">
 			 	<a href="https://www.bilibili.com/video/BV1vz411v7Ep/?spm_id_from=333.999.0.0&vd_source=365be7458b64a747d5c210dab3e1b462"><div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt=""><div>CAD制图</div></div></a>
-				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt=""><div>学习笔记</div></div>
+				<a href="https://www.bilibili.com/video/BV1vz411v7Ep/?spm_id_from=333.999.0.0&vd_source=365be7458b64a747d5c210dab3e1b462"><div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt=""><div>学习笔记</div></div></a>
 				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt=""><div>CAD作品</div></div>
 				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/ugtubiao.jpeg" width="80px" height="80px" alt=""><div>UG制图</div></div>
 				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/ugtubiao.jpeg" width="80px" height="80px" alt=""><div>UG笔记</div></div>
@@ -152,7 +183,7 @@
 				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/wanyeshejitubiao.jpg" width="80px" height="80px" alt=""><div>网页制作</div></div>
 				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/wanyeshejitubiao.jpg" width="80px" height="80px" alt=""><div>网页笔记</div></div>
 				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/wanyeshejitubiao.jpg" width="80px" height="80px" alt=""><div>网页制作</div></div>
-				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise mgr8 yinying fanSon"><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt=""><div>空白模板</div></div>
+				<div style="height: 100px;text-align: center; " class="shuJu flex1 baise  yinying fanSon"><img src="./if-files/cadtubiao.webp" width="80px" height="80px" alt=""><div>空白模板</div></div>
 
 
              </div>
@@ -168,7 +199,8 @@
 
 </tbody></table>
 
-<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="#cccccc" class="tabtop13" >
+
+<table width="100%" border="0" cellspacing="1" cellpadding="10" bgcolor="#cccccc" class="tabtop13" >
   <tbody><tr>
     <td width="1/6" class="btbg font-center titfont" rowspan="2"colspan="2">图幅代号</td>
     <td width="1/6" class="btbg font-center titfont" rowspan="2">A0</td>
@@ -197,7 +229,7 @@
   </tr>
   <tr>
     
-    <td class="btbg font-center titfont" rowspan="3">边框</td>
+    <td width="10%"class="btbg font-center titfont" rowspan="3">边框</td>
     <td  class=" font-center titfont">a</td>
     <td  class=" font-center titfont"colspan="5">25</td>
 
@@ -232,17 +264,345 @@
 
   </tr>
 </tbody></table>
-	
+       <div  class="flex mgt8">
+      <div style="flex:1 " class="flex column mgr8">
+ 		<div style="height: 550px " class="baise  ">
+		 		<div style="height: 18px;text-align: center;" class="baise fanSon ">
+
+c
+		</div>
+ 		<div style="height: 514px " class="baise  fanSon flex">
+ 		<div style="width: 45px; text-align: center;line-height: 514px;" class="baise  fanSon">
+a
+
+		</div>
+		<div style="width: 320px;" class="huise flex column ">
+
+		<div style="height: 450px;text-align: center;line-height: 514px;" class="huise flex column ">
+
+留装订边的图框格式
+
+		</div>
+<div style="height: 64px;" class=" flex  ">
+
+<div style="width: 100px;" class=" flex  ">
+
+
+		</div>
+		<div style="width: 220px;text-align: center;line-height: 64px;" class=" flex fanSon hse column">
+
+标题栏
+
+		</div>
+
+		</div>
+
+		</div>
+		<div style="width: 18px;text-align: center;line-height: 514px;" class="baise fanSon ">
+c
+
+		</div>
+
+		</div>
+		<div style="height: 18px;text-align: center;" class="baise fanSon ">
+
+c
+		</div>
+
+		</div>
+		</div>
+		<div style="flex:1 " class="flex column mgr8">
+ 		<div style="height: 550px " class="baise  ">
+		 		<div style="height: 36px;text-align: center;" class="baise fanSon ">
+
+e
+		</div>
+ 		<div style="height: 478px " class="baise  fanSon flex">
+ 		<div style="width: 36px; text-align: center;line-height: 478px;" class="baise  fanSon">
+e
+
+		</div>
+
+<div style="width: 320px;" class="huise flex column ">
+
+		<div style="height: 414px;text-align: center;line-height: 414px;" class="huise flex column ">
+
+不留装订边的图框格式
+
+		</div>
+<div style="height: 64px;" class=" flex  ">
+
+<div style="width: 100px;" class=" flex  ">
+
+
+		</div>
+		<div style="width: 220px;text-align: center;line-height: 64px;" class=" flex fanSon hse column">
+
+标题栏
+
+		</div>
+
+		</div>
+
+		</div>
+		<div style="width: 36px;text-align: center;line-height: 478px;" class="baise fanSon ">
+e
+
+		</div>
+
+		</div>
+		<div style="height: 36px;text-align: center;" class="baise fanSon ">
+
+e
+		</div>
+
+		</div>
+		</div>
+		<div style="flex:1.9 " class="flex column ">
+
+ 		<div style="height: 271px " class="baise  yinying">
+
+ 		<div style="height: 200px " class="baise  ">
+		 		<div style="height: 36px;text-align: center;" class="baise fanSon ">
+
+e
+		</div>
+ 		<div style="height: 200px " class="baise  fanSon flex">
+ 		<div style="width: 36px; text-align: center;line-height: 200px;" class="baise  fanSon">
+e
+
+		</div>
+
+		<div style="width: 550px;" class="huise flex column ">
+
+		<div style="height: 136px;text-align: center;line-height: 200px;" class="huise flex column ">
+
+不留装订边的图框格式
+
+		</div>
+<div style="height: 64px;" class=" flex  ">
+
+<div style="width: 330px;" class=" flex  ">
+
+
+		</div>
+		<div style="width: 220px;text-align: center;line-height: 64px;" class=" flex fanSon hse column">
+
+标题栏
+
+		</div>
+
+		</div>
+
+		</div>
+		<div style="width: 36px;text-align: center;line-height: 200px;" class="baise fanSon ">
+e
+
+		</div>
+
+		</div>
+		<div style="height: 36px;text-align: center;" class="baise fanSon ">
+
+e
+		</div>
+
+		</div>
+		</div>
+				<div style="height: 271px " class="baise mgt8 yinying">
+ 		<div style="height: 200px " class="baise  ">
+		 		<div style="height: 18px;text-align: center;" class="baise fanSon ">
+
+c
+		</div>
+ 		<div style="height: 230px " class="baise  fanSon flex">
+ 		<div style="width: 45px; text-align: center;line-height: 230px;" class="baise  fanSon">
+a
+
+		</div>
+
+		<div style="width: 550px;" class="huise flex column ">
+
+		<div style="height: 166px;text-align: center;line-height: 200px;" class="huise flex column ">
+
+不留装订边的图框格式
+
+		</div>
+<div style="height: 64px;" class=" flex  ">
+
+<div style="width: 330px;" class=" flex  ">
+
+
+		</div>
+		<div style="width: 220px;text-align: center;line-height: 64px;" class=" flex fanSon hse column">
+
+标题栏
+
+		</div>
+
+		</div>
+
+		</div>
+		<div style="width: 18px;text-align: center;line-height: 230px;" class="baise fanSon ">
+c
+
+		</div>
+
+		</div>
+		<div style="height: 18px;text-align: center;" class="baise fanSon ">
+
+c
+		</div>
+
+		</div>
+
+		</div>
+		</div>
+ 
+		</div>
+<div style="height: 160px" class="baise mgt8 yinying">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tbody><tr>
+    <td align="center" class="biaoti" height="60">图纸幅面加长-个人自用笔记-网页技能不足表达失真</td>
+  </tr>
+</tbody>
+<table width="100%" border="0" cellspacing="1" cellpadding="30" bgcolor="#cccccc" class="tabtop13" >
+  <tbody><tr>
+    <td width="10%" class="btbg font-center titfont" >2535</td>
+    <td width="10%" class="btbg font-center titfont"rowspan="2"colspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="4"colspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="8"colspan="4"><h1>图纸幅面加长</h1>
+<h1>如果必要，可以对幅面加长。</h1>
+<h1>加长后的幅面尺寸是基本幅面</h1>
+<h1>的短边成整数倍数增加后得出。</h1>
+<h1>图中的粗实线部分为基本幅面，</h1>
+<h1>细实线部分为加长幅面的第一选择，虚线部分为加长幅面的第二选择。</h1>
+<h1>源自B站<机械制图与计算机制图>山西农业大学视频课程！</h1>
+</td>
+
+
+  </tr>
+  
+  <tr>
+    <td width="10%" class="btbg font-center titfont" >&nbsp;</td>
+
+
+       
+  </tr>
+
+  <tr>
+    <td width="10%" class="btbg font-center titfont" >2102</td>
+    <td width="10%" class="btbg font-center titfont" >&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>
+
+
+       
+  </tr>
+  
+    <tr>
+    <td width="10%" class="btbg font-center titfont" >1892</td>
+    <td width="10%" class="btbg font-center titfont" >&nbsp;</td>
+
+
+
+      
+  </tr>
+  
+    <tr>
+    <td width="10%" class="btbg font-center titfont" >1682</td>
+    <td width="10%" class="btbg font-center titfont" >&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="4"colspan="2">&nbsp;</td>
+
+     
+  </tr>
+  
+    <tr>
+    <td width="10%" class="btbg font-center titfont" >1471</td>
+    <td width="10%" class="btbg font-center titfont" >&nbsp;</td>
+
+
+       
+  </tr>
+  
+ <tr>
+    <td width="10%" class="btbg font-center titfont" >1261</td>
+    <td width="10%" class="btbg font-center titfont" >&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>
+
+
+  </tr>
+  
+  <tr>
+    <td width="10%" class="btbg font-center titfont" >1051</td>
+    <td width="10%" class="btbg font-center titfont" >A4*5</td>
+
+
+       
+  </tr>
+
+  <tr>
+    <td width="10%" class="btbg font-center titfont" >841</td>
+    <td width="10%" class="btbg font-center titfont" >A4*4</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">A1</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2"colspan="2">A0</td>
+    <td width="10%" class="btbg font-center titfont"rowspan="2"colspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont"rowspan="2"colspan="2">&nbsp;</td> 
+  </tr>
+  
+    <tr>
+    <td width="10%" class="btbg font-center titfont" >630</td>
+    <td width="10%" class="btbg font-center titfont" >A4*3</td>
+
+
+     
+  </tr>
+  
+    <tr>
+    <td width="10%" class="btbg font-center titfont" >420</td>
+    <td width="10%" class="btbg font-center titfont" >A3</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">A2</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">A3*3</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">A3*4</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>
+    <td width="10%" class="btbg font-center titfont" rowspan="2">&nbsp;</td>        
+  </tr>
+  
+    <tr>
+    <td width="10%" class="btbg font-center titfont" >210</td>
+    <td width="10%" class="btbg font-center titfont" >A4</td>
+
+
+       
+  </tr>
+  
+      <tr>
+    <td width="10%" class="btbg font-center titfont" >0</td>
+    <td width="10%" class="btbg font-center titfont" >297</td>
+    <td width="10%" class="btbg font-center titfont" >594</td>
+    <td width="10%" class="btbg font-center titfont" >891</td>
+    <td width="10%" class="btbg font-center titfont">1189</td>
+    <td width="10%" class="btbg font-center titfont">1486</td>
+    <td width="10%" class="btbg font-center titfont">1783</td>
+    <td width="10%" class="btbg font-center titfont">2080</td>
+    <td width="10%" class="btbg font-center titfont">2378</td>        
+  </tr>
+
+</table>
+
+
+	</div>
 </div>
 </div>
 
         </div>
-        <!--又区-->
+        <!--又区--><!--flex:3左区占据内容区的3/4--><!--flex column设置竖向-->
         <div style="flex:1" class="youQu shuJu flex column mgr8 mgt8">
-            <!--提示区-->
+            <!--提示区--><!--设置高度--><!--设置白色和阴影-->
             <div style="height: 150px" class="baise yinying"></div>
-            <!--消息区-->
-            <div style="height: 1300px" class="baise"></div>
+            <!--消息区--><!--设置高度--><!--设置白色-->
+            <div style="height: 1300px" class="baise mgt8 "></div>
         </div>
     </div>
 
